@@ -1,0 +1,136 @@
+:root{
+    --primary-color: #2848fe;
+    --secoundary-color: #8416fa;
+}
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(-80deg, var(--primary-color), var(--secoundary-color));
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+header {
+  display: flex;
+  justify-content: center; /* Spaced out: Logo left, Nav items center, Buttons right */
+  align-items: center;
+  padding: 10px 10px;
+  background-color: rgba(15, 23, 42, 0.6); /* Semi-transparent dark background */
+  backdrop-filter: blur(10px); /* Gives it that modern glass effect */
+}
+
+.navbar{
+    background: linear-gradient(170deg, var(--secoundary-color), var(--primary-color));
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+    width:100%;
+    min-width: 20vw;
+    max-width: 90vw;
+    border-radius: 8px;
+}
+.logo{
+    
+    padding-top: 0.2em;
+    font-size: 32px;
+    float: left;
+    color: white;
+    text-shadow: 2px 2px rgba(15, 23, 42, 0.6)
+}
+
+.navbar ul{
+    list-style-type: none;
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    gap: 6vw;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color: rgb(29, 29, 29);
+}
+
+.navbar li{
+    float: left;
+}
+
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 20px;
+    margin: 0 auto;
+}
+
+.hero-section h1{
+    background: linear-gradient(-135deg,rgb(187, 187, 187), rgb(255, 255, 255));
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 5rem;
+    margin-bottom: 20px;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-section h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #e2e8f0;
+    -webkit-text-stroke: 0.2px rgb(0, 0, 0);
+    margin-bottom: 50px;
+}
+
+.hero-section p{
+    font-size: 1.4rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    color:#94a3b8;
+    margin-bottom: 80px;
+}
+
+.button-group{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    
+}
+
+.btn{
+    text-decoration: none;
+    padding: 14px 30px;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary{
+    background: linear-gradient(45deg, rgb(38, 38, 224), rgb(127, 2, 165));
+}
+
+.btn:hover{
+    opacity: 0.9;
+    scale: 1.1;
+    transform: translateY(-4px);
+}
+
+.btn-secondary{
+    border: 2px solid #a21caf;
+}

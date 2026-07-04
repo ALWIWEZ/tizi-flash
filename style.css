@@ -1,6 +1,8 @@
 :root{
     --primary-color: #192dff;
     --secoundary-color: #6e32fb;
+    --primary-darker: #1825b8;
+    --secoundary-darker: #4519aa;
 }
 
 
@@ -11,7 +13,7 @@
 
 body{
     min-height: 100vh;
-    background: linear-gradient(-80deg, var(--primary-color), var(--secoundary-color));
+    background: linear-gradient(-80deg, var(--primary-darker), var(--secoundary-darker));
     font-family: 'Playfair Display', Georgia, serif;
 }
 
@@ -26,7 +28,7 @@ header {
 
 .navbar{
     background: linear-gradient(170deg, var(--secoundary-color), var(--primary-color));
-    padding: 10px;
+    padding: 0px;
     box-sizing: border-box;
     border-bottom: 2px solid black;
     width:100%;
@@ -35,12 +37,15 @@ header {
     border-radius: 8px;
 }
 .logo{
-    
-    padding-top: 0.2em;
-    font-size: 32px;
+    padding: 0;
+    font-size: 1.5rem;
     float: left;
     color: white;
     text-shadow: 2px 2px rgba(15, 23, 42, 0.6)
+}
+
+.logo a{
+    padding: 0;
 }
 
 .navbar ul{
@@ -60,12 +65,15 @@ header {
 }
 
 .navbar a:hover{
-    background-color: rgb(29, 29, 29);
+    background-color: rgba(0, 0, 0, 0.257);
+}
+
+.logo_link{
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .navbar li{
     float: left;
-    border-radius: 16px;
 }
 
 .hero-section{
@@ -142,19 +150,22 @@ header {
     header{
         flex-direction: column;
         text-align: center;
-        padding: 20px;
+        padding: 6px;
     }
     .logo{
-        float: none;
-        font-size: 2.5rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding-top: 14px;
     }
-
+    .logo a{
+        padding: 0;
+        text-decoration: none;
+    }
     .navbar ul{
-        margin-top: 20px;
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 15px;
+        gap: 5px;
     }
 
     .hero-section{
@@ -166,6 +177,6 @@ header {
     }
 
     .hero-section p{
-        fomt-size:0.95rem;
+        font-size:0.95rem;
     }
 }

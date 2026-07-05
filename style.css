@@ -21,7 +21,7 @@ header {
   display: flex;
   justify-content: center; /* Spaced out: Logo left, Nav items center, Buttons right */
   align-items: center;
-  padding: 10px 10px;
+  padding: 10px;
   background-color: rgba(15, 23, 42, 0.6); /* Semi-transparent dark background */
   backdrop-filter: blur(10px); /* Gives it that modern glass effect */
 }
@@ -150,7 +150,7 @@ header {
     header{
         flex-direction: column;
         text-align: center;
-        padding: 6px;
+        padding: 4px;
     }
     .logo{
         font-size: 1.2rem;
@@ -165,15 +165,22 @@ header {
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 5px;
+        gap: 0px;
     }
 
     .hero-section{
-        padding: 50px 100px;
+        padding: 20px 50px;
     }
 
     .hero-section h1{
-        font-size: 4rem;
+        font-weight: 800; /* Makes the font nice and thick */
+        color: #ffffff;
+  
+        /* Remove your old text-stroke property if it's there */
+        -webkit-text-stroke: unset; 
+
+        /* Add this smooth, dark shadow instead */
+        text-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
     }
 
     .hero-section p{
